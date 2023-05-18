@@ -10,12 +10,17 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div>
+    <div className=' snap-mandatory'>
+      
       <SideNavbar/>
-      <Main/>
-      <Work/>
-      <Projects/>
-      <Contacts/>
+      <section className=' snap-center'><Main/></section>
+      <section className=' snap-center'><Work/></section>
+      <section className=' snap-center'><Projects/></section>
+      <section className=' snap-center'> <Contacts/></section>
+      
+      
+      
+     
     </div>
   )
 }

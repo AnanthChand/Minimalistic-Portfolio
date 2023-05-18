@@ -21,7 +21,7 @@ const SideNavbar = () => {
     <div>
       <AiOutlineMenu
         onClick={handleNav}
-        className=" absolute md:hidden top-4 right-4 z-[999]"
+        className=" absolute md:hidden top-4 right-4 z-[999] hover:scale-110 transition ease-in duration-200"
       />
 
       {nav ? (
@@ -66,7 +66,7 @@ const SideNavbar = () => {
         ""
       )}
       <div className="md:block hidden fixed top-[30%] z-[99]">
-        <div className="flex flex-col justify-center z-[99]">
+        <div className="flex flex-col justify-center z-[99] text-white  shadow-black">
           <a
             href="#main"
             className="ml-2 rounded-full hover:scale-110 transition ease-in duration-200 focus:ring-1 focus:ring-offset-2 p-2 shadow-gray-600 shadow-lg"
@@ -74,7 +74,7 @@ const SideNavbar = () => {
             <AiOutlineHome size={20} />
           </a>
           <a
-            href="#works"
+            href="#work"
             className="ml-2 rounded-full hover:scale-110 transition ease-in duration-200 focus:ring-1 focus:ring-offset-2 p-2 shadow-gray-600 shadow-lg"
           >
             <AiOutlineBuild size={20} />
